@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling when the button grows */
+    position: relative; /* Make the body a positioning context */
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #ff6f61;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the buttons */
+}
+
+.yes-button, .no-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth scaling animation */
+}
+
+.yes-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.no-button {
+    background-color: #f44336;
+    color: white;
+    position: static; /* Initially, the "No" button is in the normal flow */
+}
+
+.gif_container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Hidden success message and new GIF */
+.hidden {
+    display: none; /* Hide the message and GIF by default */
+}
+
+#successMessage {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #4caf50;
+    max-height: 80vh; /* Limit the height of the success message container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px;
+    background-color: #fff; /* Optional: Add a background color */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.scrollable-message {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.scrollable-message p {
+    margin-bottom: 15px;
+}
+
+.scrollable-message p:first-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ff6f61;
+}
+
+#successGif {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
